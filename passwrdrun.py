@@ -101,3 +101,42 @@ def copy_password(social_media):
 						print('Enter your credential details:')
 						social_media = input('Enter the social media name- ').strip()
 						account_name = input('Enter your social media handle - ').strip()
+
+while True:
+							print(' ')
+							print("-"*70)
+							print('Please choose an option for entering a password: \n ep-enter existing password \n gp-generate a password \n ex-exit')
+							psw_options = input('Enter an option: ').lower().strip()
+							print("-"*70)
+							if psw_options == 'ep':
+								print(" ")
+								password = input('Enter your password: ').strip()
+								break
+							elif psw_options == 'gp':
+								password = generate_password()
+								break
+							elif psw_options == 'ex':
+								break
+							else:
+								print('Sorry! Incorrect option entered. Try again.')
+						        save_credential(create_credential(user_name,social_media,account_name,password))
+						        print(' ')
+						        print(f'Credential Created: social media Name: {social_media} - Social Media Handle: {account_name} - Password: {password}')
+						        print(' ')
+					            elif short_code == 'dc':
+						        print(' ')
+						if display_credentials():
+							print('Here is a list of all your social media credentials')
+							print(' ')
+							for credential in display_credentials():
+								print(f'Social Media Account: {credential.social_media} - Social Media Handle: {credential.account_name} - Password: {credential.password}')
+							print(' ')
+						else:
+							print(' ')
+							print("Sorry, no credentials. cc to add.")
+							print(' ')
+					        elif short_code == 'copy':
+						    print(' ')
+						    choose = input('Enter the social_media name for the credential password to copy: ')
+						    copy_password(choose)
+						    print('Password copied succesfully')
