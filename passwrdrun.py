@@ -1,10 +1,10 @@
 #! /usr/bin/env python3
 import pyperclip
-from user  import User
+from user import User
 
 def create_user(firstname,lastname,password):
     '''
-    Function to create user account
+    Function to create user ac
     '''
     new_user = User(firstname,lastname,password)
     return new_user
@@ -29,7 +29,7 @@ def generate_password():
     gen_pwd = Credential.generate_password()
     return gen_pwd
 
-    def create_credential(user_name,social_media,account_name,password):
+def create_credential(user_name,social_media,account_name,password):
     '''
     Function creating new credentials
     '''
@@ -54,9 +54,9 @@ def copy_password(social_media):
     '''
     return Credential.copy_password(social_media)
 
-    def main():
+def main():
 	print(' ')
-	print('checkout! Password Locker.')
+	print('Password Locker!.')
 	while True:
 		print(' ')
 		print("-"*70)
@@ -65,7 +65,7 @@ def copy_password(social_media):
 		if short_code == 'ex':
 			break
 
-            elif short_code == 'ca':
+		elif short_code == 'ca':
 			print("-"*70)
 			print(' ')
 			print('To create a new password locker account:')
@@ -95,14 +95,12 @@ def copy_password(social_media):
 						print(" ")
 						print(f'Goodbye {user_name}')
 						break
-
-                        elif short_code == 'cc':
+					elif short_code == 'cc':
 						print(' ')
 						print('Enter your credential details:')
 						social_media = input('Enter the social media name- ').strip()
 						account_name = input('Enter your social media handle - ').strip()
-
-          while True:
+						while True:
 							print(' ')
 							print("-"*70)
 							print('Please choose an option for entering a password: \n ep-enter existing password \n gp-generate a password \n ex-exit')
@@ -119,12 +117,12 @@ def copy_password(social_media):
 								break
 							else:
 								print('Sorry! Incorrect option entered. Try again.')
-						        save_credential(create_credential(user_name,social_media,account_name,password))
-						        print(' ')
-						        print(f'Credential Created: social media Name: {social_media} - Social Media Handle: {account_name} - Password: {password}')
-						        print(' ')
-					            elif short_code == 'dc':
-						        print(' ')
+						save_credential(create_credential(user_name,social_media,account_name,password))
+						print(' ')
+						print(f'Credential Created: social media Name: {social_media} - Social Media Handle: {account_name} - Password: {password}')
+						print(' ')
+					elif short_code == 'dc':
+						print(' ')
 						if display_credentials():
 							print('Here is a list of all your social media credentials')
 							print(' ')
@@ -135,22 +133,28 @@ def copy_password(social_media):
 							print(' ')
 							print("Sorry, no credentials. cc to add.")
 							print(' ')
-					        elif short_code == 'copy':
-						    print(' ')
-						    choose = input('Enter the social_media name for the credential password to copy: ')
-						    copy_password(choose)
-						    print('Password copied succesfully')
-                   else:
+					elif short_code == 'copy':
+						print(' ')
+						choose = input('Enter the social_media name for the credential password to copy: ')
+						copy_password(choose)
+						print('Password copied succesfully')
+					else:
 						print('Sorry! Incorrect option entered. Try again.')
 
-			       else:
-				        print(' ')
-				        print('Sorry! Incorrect details entered. Try again or Create an Account.')
+			else:
+				print(' ')
+				print('Sorry! Incorrect details entered. Try again or Create an Account.')
 
-		           else:
-			            print("-"*70)
-			            print(' ')
-			            print('Sorry! Incorrect option entered. Try again.')
+		else:
+			print("-"*70)
+			print(' ')
+			print('Sorry! Incorrect option entered. Try again.')
+
+
+
+
+
+
 
 if __name__ == '__main__':
 	main()

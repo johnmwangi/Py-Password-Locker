@@ -1,7 +1,3 @@
-import pyperclip
-import string
-import random
-
 class Credential:
     '''
     Class that holds and saves user login details, social media a/c credentials, passwords
