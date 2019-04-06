@@ -95,3 +95,9 @@ def copy_password(social_media):
 						print(" ")
 						print(f'Goodbye {user_name}')
 						break
+
+                        elif short_code == 'cc':
+						print(' ')
+						print('Enter your credential details:')
+						social_media = input('Enter the social media name- ').strip()
+						account_name = input('Enter your social media handle - ').strip()
