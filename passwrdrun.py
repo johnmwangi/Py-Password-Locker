@@ -19,7 +19,7 @@ def authenticate_user(first_name,password):
     '''
     Function to verify user is enabled before launching the credentials
     '''
-    confirm_user = Credential.confirm_user(first_name,password)
+    confirm_user = Credentials.confirm_user(first_name,password)
     return confirm_user
 
 def generate_password():
@@ -157,4 +157,4 @@ def main():
 
 
 if __name__ == '__main__':
-	main()
+        main()
