@@ -102,7 +102,7 @@ def copy_password(social_media):
 						social_media = input('Enter the social media name- ').strip()
 						account_name = input('Enter your social media handle - ').strip()
 
-while True:
+          while True:
 							print(' ')
 							print("-"*70)
 							print('Please choose an option for entering a password: \n ep-enter existing password \n gp-generate a password \n ex-exit')
@@ -151,3 +151,6 @@ while True:
 			            print("-"*70)
 			            print(' ')
 			            print('Sorry! Incorrect option entered. Try again.')
+
+if __name__ == '__main__':
+	main()
