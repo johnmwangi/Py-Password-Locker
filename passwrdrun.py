@@ -64,3 +64,34 @@ def copy_password(social_media):
 		short_code = input('Enter an option: ').lower().strip()
 		if short_code == 'ex':
 			break
+
+            elif short_code == 'ca':
+			print("-"*70)
+			print(' ')
+			print('To create a new password locker account:')
+			first_name = input('Enter your first name - ').strip()
+			last_name = input('Enter your last name - ').strip()
+			password = input('Enter your password - ').strip()
+			save_user(create_user(first_name,last_name,password))
+			print(" ")
+			print(f'New Password Locker Account Created for: {first_name} {last_name} using password: {password}')
+		elif short_code == 'li':
+			print("-"*70)
+			print(' ')
+			print('To login, enter your password locker account details:')
+			user_name = input('Enter your first name - ').strip()
+			password = str(input('Enter your password - '))
+			user_exists = authenticate_user(user_name,password)
+			if user_exists == user_name:
+				print(" ")
+				print(f'Welcome {user_name}. Please choose an option to continue.')
+				print(' ')
+				while True:
+					print("-"*70)
+					print('Navigation codes: \n cc-Create Social Media credentials\n dc-Display Credentials \n copy-Copy Social Media Password \n ex-Exit')
+					short_code = input('Choose an option: ').lower().strip()
+					print("-"*70)
+					if short_code == 'ex':
+						print(" ")
+						print(f'Goodbye {user_name}')
+						break
