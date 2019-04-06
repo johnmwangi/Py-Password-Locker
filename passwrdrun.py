@@ -140,3 +140,14 @@ while True:
 						    choose = input('Enter the social_media name for the credential password to copy: ')
 						    copy_password(choose)
 						    print('Password copied succesfully')
+                   else:
+						print('Sorry! Incorrect option entered. Try again.')
+
+			       else:
+				        print(' ')
+				        print('Sorry! Incorrect details entered. Try again or Create an Account.')
+
+		           else:
+			            print("-"*70)
+			            print(' ')
+			            print('Sorry! Incorrect option entered. Try again.')
