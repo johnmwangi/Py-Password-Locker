@@ -53,3 +53,14 @@ def copy_password(social_media):
     Function to copy credential details and paste then in clipboard
     '''
     return Credential.copy_password(social_media)
+
+    def main():
+	print(' ')
+	print('checkout! Password Locker.')
+	while True:
+		print(' ')
+		print("-"*70)
+		print('Use these codes to navigate: \n ca-Create Password Locker Account \n li-Log Into Password Locker to access your credentials \n ex-Exit')
+		short_code = input('Enter an option: ').lower().strip()
+		if short_code == 'ex':
+			break
