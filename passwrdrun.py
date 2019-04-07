@@ -26,17 +26,17 @@ def generate_password():
     '''
     Function to automatically gen password
     '''
-    gen_pwd = Credential.generate_password()
+    gen_pwd = Credentials.generate_password()
     return gen_pwd
 
-def create_credential(user_name,social_media,account_name,password):
+def create_credentials(user_name,social_media,account_name,password):
     '''
     Function creating new credentials
     '''
-    new_credential = Credential(user_name,social_media,account_name,password)
+    new_credential = Credentials(user_name,social_media,account_name,password)
     return new_credential
 
-def save_credential(credential):
+def save_credentials(credential):
     '''
     Saves new credentials
     '''
@@ -56,7 +56,7 @@ def copy_password(social_media):
 
 def main():
 	print(' ')
-	print('Password Locker!.')
+	print('Password Locker.')
 	while True:
 		print(' ')
 		print("-"*70)
