@@ -1,7 +1,7 @@
 import unittest # Importing the unittest module
 import pyperclip#helps in copy and paste functions
 
-from Credentials import Credentials
+from credential import credentials
 
 class TestCredentials(unittest.TestCase):
     '''
@@ -14,9 +14,9 @@ class TestCredentials(unittest.TestCase):
         '''
         Function to confirm login details to active user
         '''
-        self.new_user = User('John','Mwangi','locker')
+        self.new_user = User('John','Mwangi','jonesmwas23@gamail.com','locker')
         self.new_user.save_user()
-        userX= User('John','Mwangi','locker')
+        userX= User('John','Mwangi','jonesmwas23@gamail.com', 'locker')
         userX.save_user()
         active_user = Credential.confirm_user('John','locker')
         self.assertTrue(active_user)
@@ -25,7 +25,7 @@ class TestCredentials(unittest.TestCase):
         '''
         Function to create social media account credentials before each test
         '''
-        self.new_credential = Credential('iyaz', 'facebook','iyaz2','account')
+        self.new_credential = Credentials('iyaz', 'facebook','iyaz2','account')
 
     def test__init__(self):
         '''

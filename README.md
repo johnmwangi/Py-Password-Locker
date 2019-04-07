@@ -1,39 +1,36 @@
-# Password-Locker
+# Password Locker:
+
+## By **[John Mwangi]**
+
+### Date of Release
+
+05 April, 2019.
 
 ## Description
-Password Locker is a terminal run python application that allows users to store details i.e. usernames and passwords of their accounts.
+Password Locker is a terminal Application that allows users to store username and password details of their accounts, the application is run by terminal.
 
-## User Stories
-These are the behaviours/features that the application implements for use by a user.
-
-As a user I would like:
-* To create an account with my details - log in and password
-* Store my existing login credentials
-* Generate a password for a new credential/account
-* Copy my credentials to the clipboard
+## SetUp / Installation Requirements
+### Prerequisites
+* python3.6
+* pyperclip-sudo apt-get install python-pyperclip
 
 ## BDD
 | Behaviour | Input | Output |
 | :---------------- | :---------------: | ------------------: |
-| Display codes for navigation | **In terminal: $./passwordLocker.py** | Welcome, choose an option: ca-Create Account, li-Log In, ex-Exit |
+| Display codes for navigation | **In terminal: $./passwrdrun.py** |Choose an option: cn-Create Account, ln-Log In, ex-Exit |
 | Display prompt for creating an account | **Enter: ca** | Enter your first name, last name and password |
-| Display prompt for login in | **Enter: li** | Enter your account name and password |
-| Display codes for navigation | **Successful login** | Choose an option: cc - Create Credential, dc - Display Credentials, copy - Copy Credential, ex - exit |
-| Display prompt for creating a credential | **Enter: cc** | Enter the social media name, your username/social media handle and password which can be auto generated after you specify the length or input your own |
+| Display prompt for login in | **Enter: ln** | Enter your account name and password |
+<!-- | Display codes for navigation | **Successful login** | Choose an option: sc - Create Credential, dc - Display Credentials, copy - Copy Credential, ex - exit |
+| Display prompt for creating a credential | **Enter: sc** | Enter the social media name, your username/social media handle and password which can be auto generated after you specify the length or input your own |
 | Display a list of credentials | **Enter: dc** | Prints a list of saved credentials |
 | Display prompt for which credential to copy | **Enter: copy** | Enter the social media name of the credential you wish to copy. |
-| Exit application | **Enter: ex** | Exit the current navigation stage |
+| Exit application | **Enter: ex** | Exit the current navigation stage | -->
 
-## SetUp / Installation Requirements
-### Prerequisites
-* python3.6-[Installation guide](https://realpython.com/installing-python/)
-* pyperclip-sudo apt-get install python-pyperclip
-
-### Cloning
+<!-- ### Cloning
 * In your terminal:
 
         $ git clone my repo
-        $ cd Python-pwd-locker
+        $ cd Python-pwd-locker -->
 
 ## Testing the Application
 * To run the tests for the class file:
@@ -45,4 +42,8 @@ As a user I would like:
 * Python3.6
 
 ## Known Bugs
-* Copy function not fully functional
+* Incase of any bug reachout to jones@gmail.com
+
+### License
+*License is under MIT 2019*
+Copyright (c) 2019 **John Mwangi**.

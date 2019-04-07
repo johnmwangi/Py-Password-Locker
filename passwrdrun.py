@@ -1,6 +1,7 @@
 #! /usr/bin/env python3
 import pyperclip
 from user import User
+#from credentils import credentils
 
 def create_user(firstname,lastname,password):
     '''
@@ -60,12 +61,12 @@ def main():
 	while True:
 		print(' ')
 		print("-"*70)
-		print('Use these codes to navigate: \n ca-Create Password Locker Account \n li-Log Into Password Locker to access your credentials \n ex-Exit')
+		print('Use these codes to navigate: \n cn-Create Password Locker Account \n ln-Log Into Password Locker to access your credentials \n ex-Exit')
 		short_code = input('Enter an option: ').lower().strip()
 		if short_code == 'ex':
 			break
 
-		elif short_code == 'ca':
+		elif short_code == 'cn':
 			print("-"*70)
 			print(' ')
 			print('To create a new password locker account:')
@@ -75,7 +76,7 @@ def main():
 			save_user(create_user(first_name,last_name,password))
 			print(" ")
 			print(f'New Password Locker Account Created for: {first_name} {last_name} using password: {password}')
-		elif short_code == 'li':
+		elif short_code == 'ln':
 			print("-"*70)
 			print(' ')
 			print('To login, enter your password locker account details:')
@@ -88,14 +89,14 @@ def main():
 				print(' ')
 				while True:
 					print("-"*70)
-					print('Navigation codes: \n cc-Create Social Media credentials\n dc-Display Credentials \n copy-Copy Social Media Password \n ex-Exit')
+					print('Navigation codes: \n sc-Create Social Media credentials\n dc-Display Credentials \n copy-Copy Social Media Password \n ex-Exit')
 					short_code = input('Choose an option: ').lower().strip()
 					print("-"*70)
 					if short_code == 'ex':
 						print(" ")
 						print(f'Goodbye {user_name}')
 						break
-					elif short_code == 'cc':
+					elif short_code == 'sc':
 						print(' ')
 						print('Enter your credential details:')
 						social_media = input('Enter the social media name- ').strip()
