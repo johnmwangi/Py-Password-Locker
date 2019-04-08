@@ -12,16 +12,16 @@ Password Locker is a terminal Application that allows users to store username an
 ## SetUp / Installation Requirements
 ### Prerequisites
 
-* python3.6
-* pyperclip-sudo apt-get install python-pyperclip
+* `python3.6`
+* `pyperclip-sudo apt-get install python-pyperclip`
 
 ## BDD
 | Behaviour | Input | Output |
 | :---------------- | :---------------: | ------------------: |
-| Display codes for navigation | **In terminal: $./passwrdrun.py** |Choose an option: cn-Create Account, ln-Log In, ex-Exit |
-| Display prompt for creating an account | **Enter: cn** | Enter your first name, last name and password |
-| Display prompt for login in | **Enter: ln** | Enter your account name and password |
-| Display codes for navigation | **Successful login** | Choose an option: sc - Create Credential, dc - Display Credentials, copy - Copy Credential, ex - exit |
+| Display codes for navigation | In terminal: $./passwrdrun.py |Choose an option: cn-Create Account, ln-Log In, ex-Exit |
+| Display prompt for creating an account | Enter: cn | Enter your first name, last name and password |
+| Display prompt for login in | Enter: ln | Enter your account name and password |
+| Display codes for navigation | Successful login | Choose an option: sc - Create Credential, dc - Display Credentials, copy - Copy Credential, ex - exit |
 <!-- | Display prompt for creating a credential | **Enter: sc** | Enter the social media name, your username/social media handle and password which can be auto generated after you specify the length or input your own |
 | Display a list of credentials | **Enter: dc** | Prints a list of saved credentials |
 | Display prompt for which credential to copy | **Enter: copy** | Enter the social media name of the credential you wish to copy. |
@@ -37,12 +37,12 @@ Password Locker is a terminal Application that allows users to store username an
 
 * To run the tests for the class file:
 
-  *  $ python3.6 user_test.py
-  *  $ python3.6 credentials_test.py
-  *  $ python3.6 ./passwrdun.py to proceed
+  * `$ python3.6 user_test.py`
+  *  `$ python3.6 credentials_test.py`
+  *  `$ python3.6 ./passwrdun.py to proceed`
 
 ## Technologies Used
-* Python3.6
+* `Python3.6`
 
 ## Known Bugs
 * Incase of any bug reachout to jonesmwas356@gmail.com

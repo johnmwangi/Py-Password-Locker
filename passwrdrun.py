@@ -60,14 +60,14 @@ def main():
 	print('Password Locker.')
 	while True:
 		print(' ')
-		print("-"*70)
+		print("*"*70)
 		print('Use these codes to navigate: \n cn-Create Password Locker Account \n ln-Log Into Password Locker to access your credentials \n ex-Exit')
 		short_code = input('Enter an option: ').lower().strip()
 		if short_code == 'ex':
 			break
 
 		elif short_code == 'cn':
-			print("-"*70)
+			print("*"*70)
 			print(' ')
 			print('To create a new password locker account:')
 			first_name = input('Enter your first name - ').strip()
@@ -77,7 +77,7 @@ def main():
 			print(" ")
 			print(f'New Password Locker Account Created for: {first_name} {last_name} using password: {password}')
 		elif short_code == 'ln':
-			print("-"*70)
+			print("*"*70)
 			print(' ')
 			print('To login, enter your password locker account details:')
 			user_name = input('Enter your first name - ').strip()
@@ -88,10 +88,10 @@ def main():
 				print(f'Welcome {user_name}. Please choose an option to continue.')
 				print(' ')
 				while True:
-					print("-"*70)
+					print("*"*70)
 					print('Navigation codes: \n cm-Create Social Media Credentials\n dc-Display Credentials \n copy-Copy Social Media Password \n ex-Exit')
 					short_code = input('Choose an option: ').lower().strip()
-					print("-"*70)
+					print("*"*70)
 					if short_code == 'ex':
 						print(" ")
 						print(f'Goodbye {user_name}')
@@ -103,10 +103,10 @@ def main():
 						account_name = input('Enter your social media handle - ').strip()
 						while True:
 							print(' ')
-							print("-"*70)
+							print("*"*70)
 							print('Please choose an option for entering a password: \n ep-enter existing password \n gp-generate a password \n ex-exit')
 							psw_options = input('Enter an option: ').lower().strip()
-							print("-"*70)
+							print("*"*70)
 							if psw_options == 'ep':
 								print(" ")
 								password = input('Enter your password: ').strip()
@@ -118,7 +118,7 @@ def main():
 								break
 							else:
 								print('Sorry! Incorrect option entered. Try again.')
-						save_credential(create_credential(user_name,social_media,account_name,password))
+						save_credentials(create_credential(user_name,social_media,account_name,password))
 						print(' ')
 						print(f'Credential Created: social media Name: {social_media} - Social Media Handle: {account_name} - Password: {password}')
 						print(' ')
@@ -147,7 +147,7 @@ def main():
 				print('Sorry! Incorrect details entered. Try again or Create an Account.')
 
 		else:
-			print("-"*70)
+			print("*"*70)
 			print(' ')
 			print('Sorry! Incorrect option entered. Try again.')
 

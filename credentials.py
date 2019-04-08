@@ -35,7 +35,7 @@ class Credentials:
         '''
         Function to save new user credentials
         '''
-        save_credentials.credentials_list.append(self)
+        Credentials.credentials_list.append(self)
 
     def generate_password():
         '''
@@ -70,5 +70,5 @@ class Credentials:
         '''
 		Class method that copies a credential's password of a specific social media site after the credential's social media name is entered
 		'''
-        collect_pass = Credential.search_social_media(social_media)
+        collect_pass = Credentials.search_social_media(social_media)
         return pyperclip.copy(collect_pass.password)
