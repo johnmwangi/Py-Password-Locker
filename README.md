@@ -35,18 +35,18 @@ Password Locker is a terminal Application that allows users to store username an
 
 ## Testing the Application
 
-* ```To run the tests for the class file:
+ ```To run the tests for the class file:
 
   * $ python3.6 user_test.py
   * $ python3.6 credentials_test.py
   * $ python3.6 ./passwrdun.py to proceed
 ```
 ## Technologies Used
-* `Python3.6`
+* Python3.6
 
 ## Known Bugs
 * Incase of any bug reachout to jonesmwas356@gmail.com
 
 ### License
 *License is under MIT 2019*
-Copyright (c) 2019 **John Mwangi**.
+Copyright (c) 2019 *John Mwangi*.
