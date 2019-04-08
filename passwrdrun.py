@@ -147,7 +147,7 @@ def main():
 				print('Sorry! Incorrect details entered. Try again or Create an Account.')
 
 		else:
-			print("*"*70)
+			print("* "*70)
 			print(' ')
 			print('Sorry! Incorrect option entered. Try again.')
 
