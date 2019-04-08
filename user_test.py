@@ -14,15 +14,14 @@ class TestUser(unittest.TestCase):
         '''
         Function to help create user a/c details before each test
         '''
-        self.new_user = User('John','Mwangi','jonesmwas23@gamail.com', 'locker')
+        self.new_user = User('John','Mwangi','locker')
 
-    def test_init_(self):
+    def test_init(self):
         '''
         Test to check creation of new user instance
         '''
         self.assertEqual(self.new_user.first_name,'John')
         self.assertEqual(self.new_user.last_name,'Mwangi')
-        self.assertEqual(self.new_user.email,'jonesmwas23@gamail.com')
         self.assertEqual(self.new_user.password,'locker')
 
 
@@ -32,6 +31,8 @@ class TestUser(unittest.TestCase):
         '''
         self.new_user.save_user()
         self.assertEqual(len(User.users_list),1)
+
+    #
 
 if __name__ == '__main__':
       unittest.main()

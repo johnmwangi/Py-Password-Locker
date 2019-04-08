@@ -1,7 +1,7 @@
 #! /usr/bin/env python3
 import pyperclip
 from user import User
-#from credentils import credentils
+from credentials import Credentials
 
 def create_user(firstname,lastname,password):
     '''
@@ -89,14 +89,14 @@ def main():
 				print(' ')
 				while True:
 					print("-"*70)
-					print('Navigation codes: \n sc-Create Social Media credentials\n dc-Display Credentials \n copy-Copy Social Media Password \n ex-Exit')
+					print('Navigation codes: \n cm-Create Social Media Credentials\n dc-Display Credentials \n copy-Copy Social Media Password \n ex-Exit')
 					short_code = input('Choose an option: ').lower().strip()
 					print("-"*70)
 					if short_code == 'ex':
 						print(" ")
 						print(f'Goodbye {user_name}')
 						break
-					elif short_code == 'sc':
+					elif short_code == 'cm':
 						print(' ')
 						print('Enter your credential details:')
 						social_media = input('Enter the social media name- ').strip()
@@ -150,11 +150,6 @@ def main():
 			print("-"*70)
 			print(' ')
 			print('Sorry! Incorrect option entered. Try again.')
-
-
-
-
-
 
 
 if __name__ == '__main__':

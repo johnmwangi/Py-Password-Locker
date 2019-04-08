@@ -1,8 +1,9 @@
 import pyperclip
 import string
 import random
+from user import User
 
-class Credential:
+class Credentials:
     '''
     Class that holds and saves user login details, social media a/c credentials, passwords
     '''
@@ -34,7 +35,7 @@ class Credential:
         '''
         Function to save new user credentials
         '''
-        Credential.credentials_list.append(self)
+        save_credentials.credentials_list.append(self)
 
     def generate_password():
         '''

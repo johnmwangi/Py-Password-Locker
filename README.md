@@ -1,6 +1,6 @@
-# Password Locker:
+# Password Locker
 
-## Author *John Mwangi*
+## Author; John Mwangi
 
 ### Date of Release
 
@@ -31,7 +31,7 @@ Password Locker is a terminal Application that allows users to store username an
 * In your terminal:
 
         $ git clone my repo
-        $ cd Python-pwd-locker -->
+        $ cd Py-Password-Locker -->
 
 ## Testing the Application
 
@@ -39,6 +39,7 @@ Password Locker is a terminal Application that allows users to store username an
 
   *  $ python3.6 user_test.py
   *  $ python3.6 credentials_test.py
+  *  $ python3.6 ./passwrdun.py to proceed
 
 ## Technologies Used
 * Python3.6
