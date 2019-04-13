@@ -22,12 +22,8 @@ Password Locker is a terminal Application that allows users to store username an
 | Display prompt for creating an account | Enter: cn | Enter your first name, last name and password |
 | Display prompt for login in | Enter: ln | Enter your account name and password |
 | Display codes for navigation | Successful login | Choose an option: sc - Create Credential, dc - Display Credentials, copy - Copy Credential, ex - exit |
-<!-- | Display prompt for creating a credential | **Enter: sc** | Enter the social media name, your username/social media handle and password which can be auto generated after you specify the length or input your own |
-| Display a list of credentials | **Enter: dc** | Prints a list of saved credentials |
-| Display prompt for which credential to copy | **Enter: copy** | Enter the social media name of the credential you wish to copy. |
-| Exit application | **Enter: ex** | Exit the current navigation stage | -->
 
-<!-- ### Cloning
+<-- ### Cloning
 * In your terminal:
 
         $ git clone my repo

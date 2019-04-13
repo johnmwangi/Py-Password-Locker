@@ -47,7 +47,7 @@ def display_credentials():
     '''
     Function to display_credentials saved by user
     '''
-    return Credential.display_credentials()
+    return Credentials.display_credentials()
 
 def copy_password(social_media):
     '''
